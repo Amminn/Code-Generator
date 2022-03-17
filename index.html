@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Random Password Genartor</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a<span class="green">random password</span></h1>
+        <p class="paragraph">Never use an insecure password again.</p>
+        <div class="buttons-container">
+            <button id="button"><img src="./images/Icon.png" alt="">Generate passwords</button>
+            <div class="standing-divider"></div>
+            <div class="wrapper">
+                <label for="range">Length of the Password</label>
+                <input type="range" name="range" id="range" min="8" max="14" value="12">
+                <span class="value-print">12</span>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="code-examples">
+            <div class="output" id="output1">
+                <img src="./images/three-dots-dark.png" alt="">
+                <!-- <p id="myInpt">aSw25S/1a@.aDa</p> -->
+            </div>
+            <div class="output" id="output2">
+                <!-- <p>aS.kj123l123</p>    -->
+                <img src="./images/three-dots-dark.png" alt="">
+            </div>
+            <div class="output" id="output3">
+                <img src="./images/three-dots-dark.png" alt="">
+            </div>
+            <div class="output" id="output4">
+                <img src="./images/three-dots-dark.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
