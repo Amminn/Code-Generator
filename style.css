@@ -107,6 +107,7 @@ button {
     font-size: 2.2rem;
     color: white;
     margin-left: 2rem;
+    min-width: 30px;
 }
 
 .divider {
@@ -148,10 +149,12 @@ button {
     padding: 0.5rem;
     font-size: 1rem;
     border-radius: 0 6px 0 0;
+    pointer-events: none;
 }
 
 .output .copied.bx {
     background-color: transparent;
+    cursor: pointer;
 }
 
 .output > p {
@@ -164,4 +167,20 @@ button {
 }
 
 
+@media screen and (max-width: 540px) {
+    button {
+        margin-bottom: 1.5rem;
+    }
 
+    .code-examples {
+        justify-content: center;
+    }
+
+    .code-examples > .output {
+        width: 100%;
+    }
+
+    .output p {
+        letter-spacing: 0.5px;
+    }
+}
